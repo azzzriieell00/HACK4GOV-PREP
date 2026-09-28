@@ -172,13 +172,6 @@ Suggested setup for 4-5 members:
 | Stego Lead | Steganography | Images, audio |
 | Reversing Lead | Binary analysis | ELF, APK |
 
-Captain responsibilities:
-- Track time for each challenge
-- Make the call to move on
-- Keep team focused
-- Submit flags when others are busy
-
----
 
 ## Daily Git Workflow
 
