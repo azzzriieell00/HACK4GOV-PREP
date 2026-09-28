@@ -1,5 +1,5 @@
-# HACK4GOV 2026 — RED TEAM PLAYBOOK
 
+# HACK4GOV 2026 
 
 **Competition:** Hack4Gov 2026 (October)
 **Organizer:** DICT Philippines
@@ -35,6 +35,36 @@
 - Before: Install tools, read playbook
 - During: Follow decision trees
 - After: Commit writeups
+
+---
+
+## Scoring System - Official Hack4Gov 2026
+
+| Point Range | Difficulty | Time Budget |
+|-------------|------------|-------------|
+| 1-30 points | Easy | 5-10 min |
+| 31-70 points | Moderate | 15-25 min |
+| 71-100 points | Hard | 30-45 min |
+
+### Key Insight
+
+Since maximum points per challenge is 100, the number of challenges solved matters more than the difficulty of each one.
+
+Example:
+- 10 Easy challenges = 300 points (50-100 min total)
+- 3 Hard challenges = 300 points (90-135 min total)
+
+Same score, but Easy challenges leave more time for everything else.
+
+### Qualification Structure
+
+The competition has two stages:
+- Regional Qualifying Round - team ranking by total score
+- Wildcard Slots - individual scores determine eligibility
+
+Both individual and team performance matter.
+
+---
 
 ## Competition Day Workflow
 
@@ -83,33 +113,6 @@ HACK4GOV-PREP/
 │   ├── Stego/README.md
 │   └── Web/README.md
 └── Writeups/                  (competition writeups)
-
----
-
-## Category Difficulty Ratings
-
-Easy (50-100 points):
-- Base64 decoding
-- Caesar cipher
-- EXIF metadata
-- Simple directory listing
-
-Medium (100-300 points):
-- RSA with small exponent
-- PCAP with credentials
-- Basic SQL injection
-- LSB steganography
-
-Hard (300-500 points):
-- Complex RSA attacks
-- Multi-stage forensics
-- Binary exploitation
-- Chained vulnerabilities
-
-Expert (500+ points):
-- Multi-category combinations
-- Custom crypto attacks
-- Advanced reversing
 
 ---
 
@@ -228,7 +231,7 @@ Save as Writeups/<category>/<challenge>.md:
     ## Challenge: <name>
     - Category: Web
     - Source: Hack4Gov 2026
-    - Points: 500
+    - Points: 45
     - Time: 12 minutes
     - Flag: flag{...}
 
@@ -264,17 +267,28 @@ The 15-Minute Rule:
 - Come back after solving 2 other challenges
 - Fresh perspective often solves it
 
-Priority order:
-1. Easy challenges first (crypto, stego) - 5-10 min each
-2. Medium challenges (web, forensics) - 15-30 min each
-3. Hard challenges (reversing) - 30+ min each
-4. Expert challenges - last hour only
+Priority order based on points:
+1. Easy challenges (1-30 points) - target 5-10 min each
+2. Moderate challenges (31-70 points) - target 15-25 min each
+3. Hard challenges (71-100 points) - target 30-45 min each
 
 Time budget for 10-hour competition:
-- 2 hours: Easy (crypto, stego)
-- 5 hours: Medium (web, forensics)
-- 2 hours: Hard (reversing)
+- 3 hours: Easy challenges (target: 15+ solves)
+- 4 hours: Moderate challenges (target: 6+ solves)
+- 2 hours: Hard challenges (target: 2-3 solves)
 - 1 hour: Final pushes and cleanup
+
+### Points Optimization Strategy
+
+Total potential points from Easy challenges alone:
+- 20 Easy challenges at 30 points = 600 points
+
+This beats:
+- 6 Hard challenges at 100 points = 600 points
+
+But Easy challenges take half the time, leaving room for more.
+
+Always prioritize Easy challenges when time is limited.
 
 ---
 
@@ -443,17 +457,17 @@ Practice platforms:
 ## Competition Strategy
 
 Stage 1 - Warm Up (First 30 min):
-- Focus: Easy crypto and stego
-- Goal: Build momentum
+- Focus: Easy crypto and stego challenges (1-30 points)
+- Goal: Build momentum and claim easy points
 - Time per challenge: 5-10 min
 
 Stage 2 - Main Push (Middle hours):
-- Focus: Web and forensics
-- Goal: Accumulate team score
+- Focus: Web and forensics challenges (1-70 points)
+- Goal: Accumulate the bulk of team score
 - Time per challenge: 15-30 min
 
-Stage 3 - Reversing (Later middle):
-- Focus: Reversing
+Stage 3 - Moderate to Hard (Later middle):
+- Focus: Moderate to hard challenges (31-100 points)
 - Goal: Harder point values
 - Time per challenge: 30-45 min
 
@@ -463,10 +477,10 @@ Stage 4 - Hail Mary (Last hour):
 - Time per challenge: 5-10 min
 
 Scoring priorities:
-1. Points per minute
-2. Category bonuses
-3. First blood (if applicable)
-4. Team average (no idle members)
+1. Points per minute - Easy challenges give best ROI
+2. Number of solves - 10 Easy beats 3 Hard
+3. Team average - ensure every member solves
+4. Individual score for Wildcard eligibility
 
 ---
 
@@ -543,3 +557,4 @@ Running out of time:
 2. Submit found flags
 3. Note where you left off
 4. Complete writeups after
+
