@@ -1,6 +1,6 @@
 # HACK4GOV 2026 — RED TEAM PLAYBOOK
 
-**Team:** [Your Team Name]
+
 **Competition:** Hack4Gov 2026 (October)
 **Organizer:** DICT Philippines
 
