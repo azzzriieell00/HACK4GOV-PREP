@@ -1,5 +1,5 @@
 
-# HACK4GOV 2026 
+# HACK4GOV PRACTICE FOR OUT TEAM
 
 **Competition:** Hack4Gov 2026 (October)
 **Organizer:** DICT Philippines
